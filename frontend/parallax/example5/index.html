@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Простой эффект прокрутки с параллаксом на CSS3 | Демонстрация для сайта RUDEBOX</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+   <link media="screen" href="demo/styles/demo.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript">
+jQuery(document).ready(function(){
+	$objWindow = $(window);
+	$('div[data-type="background"]').each(function(){
+		var $bgObj = $(this);
+		$(window).scroll(function() {
+			var yPos = -($objWindow.scrollTop() / $bgObj.data('speed')); 
+           
+			var coords = '100% '+ yPos + 'px';
+            // Animate the background
+			 $bgObj.css({ backgroundPosition: coords });
+           
+		});
+		
+	});
+});
+</script>
+</head>
+<body>
+<!-- Используется только для демонстрации -->
+<!-- <div id="controls">
+   <!-- Яндекс.Директ -->
+<!-- <div id="yandex_ad"></div>
+<script type="text/javascript">
+(function(w, d, n, s, t) {
+    w[n] = w[n] || [];
+    w[n].push(function() {
+        Ya.Direct.insertInto(84098, "yandex_ad", {
+            ad_format: "direct",
+            type: "240x400",
+            border_type: "block",
+            border_radius: true,
+            site_bg_color: "FFFFFF",
+            header_bg_color: "FEEAC7",
+            bg_color: "FFF9F0",
+            border_color: "FBE5C0",
+            title_color: "0000CC",
+            url_color: "006600",
+            text_color: "000000",
+            hover_color: "0066FF",
+            favicon: true,
+            no_sitelinks: false
+        });
+    });
+    t = d.getElementsByTagName("script")[0];
+    s = d.createElement("script");
+    s.src = "//an.yandex.ru/system/context.js";
+    s.type = "text/javascript";
+    s.async = true;
+    t.parentNode.insertBefore(s, t);
+})(window, document, "yandex_context_callbacks");
+</script> -->
+<!-- </div> --> 
+
+    <div id="home" class="bg_parralax" data-type="background" data-speed="10"></div>       
+    <div id="about" class="bg_parralax" data-type="background" data-speed="20"></div>
+    <div id="blog" class="bg_parralax" data-type="background" data-speed="40"></div>  
+    <div id="contact" class="bg_parralax" data-type="background" data-speed="80"></div>
+</body>
+</html>

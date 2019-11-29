@@ -1,0 +1,284 @@
+body{
+	background: #fcfcfc;
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica;
+}
+
+.all1{
+	background: radial-gradient(circle at 80px 40px, #f44336, #e91e63, #9c27b0);
+	height: 100vh;
+}
+
+.all2{
+	background: linear-gradient(to top left, #FFC107, #f44336, #e91e63);
+	height: 100vh;
+}
+
+.all3{
+	background: linear-gradient(140deg, #f44336, #e91e63, #9c27b0);
+	background-size: 600% 600%;
+
+	-webkit-animation: AnimationName 9s ease infinite;
+	-moz-animation: AnimationName 9s ease infinite;
+	animation: AnimationName 9s ease infinite;
+
+	height: 100vh;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:4% 0%}
+    50%{background-position:97% 100%}
+    100%{background-position:4% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:4% 0%}
+    50%{background-position:97% 100%}
+    100%{background-position:4% 0%}
+}
+@keyframes AnimationName { 
+    0%{background-position:4% 0%}
+    50%{background-position:97% 100%}
+    100%{background-position:4% 0%}
+}
+
+.all4{
+	background: linear-gradient(to bottom right, #F44336, #E91E63, #9C27B0, #673AB7, #3F51B5, #2196F3);
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.transparent-text{
+	font-family: 'Rubik One', sans-serif;
+	font-size: 50px;
+	text-transform: uppercase;
+	background: #2E2F45;
+	display: table;
+	margin: 20px auto;
+	color: white;
+	border-radius: 5px;
+	mix-blend-mode: multiply;
+	padding: 5px 10px;
+}
+
+.all5{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background: #fcfcfc;
+	height: 100vh;
+}
+
+.gradient-text {
+	font-family: 'Rubik One', sans-serif;
+	font-size: 50px;
+	text-transform: uppercase;
+	background: linear-gradient(45deg, #9C27B0 33%, #673AB7 66%, #3F51B5);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: #0B2349;
+	display: table;
+	margin: 20px auto;
+}
+
+.thin-text-5{
+	font-family: Helvetica;
+	font-size: 50px;
+	text-transform: uppercase;
+	background: linear-gradient(45deg, #9C27B0 33%, #673AB7 66%, #3F51B5);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: #0B2349;
+	display: table;
+	margin: 20px auto;
+}
+
+.all6{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	//background: linear-gradient(to right, #F50052, #F44336, #FF9800); 
+	background: linear-gradient(to right, #F50052, #FFA810); 
+	height: 100vh;
+}
+
+.gradient-text-2 {
+	font-size: 50px;
+	font-weight: 900;
+	text-transform: uppercase;
+	background: linear-gradient(45deg, #03F5B8 33%, #4A00CC 66%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: #0B2349;
+	display: table;
+	margin: 20px auto;
+}
+
+.all7{
+	height: 100vh;
+	background: linear-gradient(to bottom right, #673AB7, #03A9F4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: 90px;
+	font-family: 'Rubik One', sans-serif;
+}
+
+.all8{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.circle{
+	background: linear-gradient(to right bottom, #651FFF, #FF4081, #FFFF00);
+	width: 300px;
+	height: 300px;
+	border-radius: 300px;
+	//padding: -300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	//-webkit-filter: brightness(140%);
+	//-webkit-filter: contrast(140%);
+}
+
+.all9{
+	height: 100vh;
+	background: url('https://static.pexels.com/photos/87223/pexels-photo-87223.jpeg');
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+.gradient-9{
+	font-family: 'Dosis', sans-serif;
+	background: linear-gradient(to top right, rgba(3,169,244,0.5), rgba(156,39,176,0.5));
+	height: 100vh;
+	width: 100%;
+	//opacity: 0.5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-size: 200%;
+	text-transform: uppercase;
+}
+
+.all10{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.gradient-all {
+  font-size: 2em;
+  background: linear-gradient(135deg, #E91E63 20%, #9C27B0 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  padding: 0.3em 0.6em ;
+  border: 3px solid transparent;
+  border-image: linear-gradient(135deg, #E91E63 20%, #9C27B0 70%);
+  border-image-slice: 1;
+}
+
+.all11{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: url('bg.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.opacity{
+	margin-left: 200px;
+	margin-right: 200px;
+	background: rgba(0,0,0,0.4);
+	height: 70vh;
+	color: #fff;
+	border-radius: 15px;
+	padding: 20px;
+}
+
+
+
+
+
+body {
+  //min-height: 100vh;
+  box-sizing: border-box;
+  //margin: 0;
+  //padding-top: calc(50vh - 6em);
+  //font: 150%/1.6 Baskerville, Palatino, serif;
+}
+
+
+
+.all12{
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+}
+
+
+body,
+main::before {
+  background: url("https://avatanplus.com/files/resources/original/57526cb3cfeab15519f89e8c.jpg") 0 / cover fixed;
+}
+
+main {
+	color: #fff;
+  position: relative;
+  margin: 0 auto;
+  padding: 1em;
+  max-width: 23em;
+  background: hsla(0, 0%, 100%, .15) border-box;
+  overflow: hidden;
+  border-radius: .3em;
+	width: 100vh;
+	height: 50vh;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Rubik One', sans-serif;
+	font-size: 500%;
+}
+
+main::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: -30px;
+  z-index: -1;
+  -webkit-filter: blur(20px);
+  filter: blur(20px);
+}
+
+.all13{
+	//height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}

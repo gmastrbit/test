@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<title> Test </title>
+		<link rel="stylesheet" href="style.css">
+		<!-- <link rel="shortcut icon" href="ico.ico" type="image/x-icon"> -->
+		<script src="https://use.fontawesome.com/eb2bf65a4f.js"></script>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+html { height: 100%; }
+
+body { 
+  background: #333; 
+  text-align: center;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 { font-size: 20vw; }
+
+.linear-wipe {
+  text-align: center;
+  
+  background: linear-gradient(to right, #FFF 20%, #FF0 40%, #FF0 60%, #FFF 80%);
+  background-size: 200% auto;
+  
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  animation: shine 1s linear infinite;
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+}
+		</style>
+	</head>
+	<body>
+		<h1 class="linear-wipe">Shine!</h1>
+	</body>
+</html>

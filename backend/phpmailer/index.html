@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Отправка файлов на почту</title>
+  <meta name="description" content="Отправка файлов на почту при помощи PHPMailer">
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<form enctype="multipart/form-data" method="post" id="form">
+ <div class="flexblock">
+   <div class="group">
+     <div class="input-wrap ">
+       <input name="name" id="name" type="text" class="form-input">
+       <label for="name" class="form-label">Введите ваше имя</label>
+     </div>
+     <div class="input-wrap ">
+       <input name="email" id="email" type="mail" class="form-input">
+       <label for="email" class="form-label">Введите ваш Email</label>
+     </div>
+   </div>
+   <div class="area-wrap right">
+     <textarea name="text" class="form-text" id="text"></textarea>
+     <label for="text" class="area-label">Оставьте ваше сообщение</label>
+   </div>
+   <label for="myfile" class="file-label left">
+    <img src="img/upload.svg" alt="">
+    <p class="amount">Прикрепить файлы</p>
+   </label>
+   <input type="file" class="my" id="myfile" name="myfile[]" multiple>
+
+   <button type="submit" class="button right">Отправить</button>
+   </div>
+
+   <div class="loading">
+    <p>Подождите</p>
+   </div>
+</form>
+
+<div class="msg"></div>
+
+</body>
+
+</html>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/js.js"></script>
+<link rel="stylesheet" href="css/css.css" />

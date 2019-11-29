@@ -1,0 +1,24 @@
+/*@font-face {
+	font-family: "pt_sans";
+	src: url("pt_sans.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "pt_serif";
+	src: url("pt_serif.ttf");
+	font-style: normal;
+	font-weight: normal;
+}*/
+
+body{
+	background: #311B92;
+	margin: 0;
+	padding: 0;
+}
+
+#particles-js{
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}

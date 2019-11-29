@@ -1,0 +1,19 @@
+@font-face {
+	font-family: "AAFutured";
+	src: url("../fonts/AAFutured/AAFutured.eot");
+	src: url("../fonts/AAFutured/AAFutured.eot") format("embedded-opentype"),
+			 url("../fonts/AAFutured/AAFutured.woff") format("woff"),
+			 url("../fonts/AAFutured/AAFutured.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "RalewayRegular";
+	src: url("../fonts/RalewayRegular/RalewayRegular.eot");
+	src: url("../fonts/RalewayRegular/RalewayRegular.eot") format("embedded-opentype"),
+			 url("../fonts/RalewayRegular/RalewayRegular.woff") format("woff"),
+			 url("../fonts/RalewayRegular/RalewayRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
